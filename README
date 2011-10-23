@@ -1,0 +1,1 @@
+MultisortProxyModel is Qt based class inherits from QSortFilterProxyModel, which can sort table by miltiply columns.
