@@ -1,6 +1,6 @@
 QT += core gui sql
 
-TARGET = MultisortProxyModel
+TARGET = MultisortTableView
 TEMPLATE = app
 
 SOURCES += \
