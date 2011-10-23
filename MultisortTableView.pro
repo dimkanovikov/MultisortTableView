@@ -11,3 +11,6 @@ HEADERS += \
     AlphanumComparer.h \
     MultisortTableView.h \
     AlphanumSortProxyModel.h
+
+OTHER_FILES += \
+    MultisortProxyModel.pro
