@@ -12,5 +12,4 @@ HEADERS += \
     MultisortTableView.h \
     AlphanumSortProxyModel.h
 
-OTHER_FILES += \
-    MultisortProxyModel.pro
+OTHER_FILES +=
