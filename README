@@ -1,1 +1,1 @@
-MultisortProxyModel is Qt based class inherits from QSortFilterProxyModel, which can sort table by miltiply columns.
+MultisortTableView is Qt widget inherits from QTableModel, which can sort table by miltiply columns.
