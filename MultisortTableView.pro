@@ -10,6 +10,8 @@ SOURCES += \
 HEADERS += \
     AlphanumComparer.h \
     MultisortTableView.h \
-    AlphanumSortProxyModel.h
+    AlphanumSortProxyModel.h \
+    ColumnsSorter.h
 
-OTHER_FILES +=
+RESOURCES += \
+    resources.qrc

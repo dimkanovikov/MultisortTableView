@@ -23,7 +23,9 @@ void createDataTable()
     query.exec("insert into users values('Page', 'Larry', 1973);");
     query.exec("insert into users values('Jobs', 'Steve', 1955);");
     query.exec("insert into users values('Gates', 'Bill', 1955);");
-    query.exec("insert into users values('Zuckerberg', 'Mark', 1984);");
+    query.exec("insert into users values('Gates', 'Bill12', 196);");
+    query.exec("insert into users values('Zuckerberg', 'Mark11', 1984);");
+    query.exec("insert into users values('Zuckerberg', 'Mark09', 11984);");
 
     db.commit();
 }
@@ -36,13 +38,17 @@ int main(int argc, char *argv[])
 
     QSqlTableModel *users = new QSqlTableModel;
     users->setTable( "users" );
-    users->select();
+    users->select( );
 
     MultisortTableView tableView;
+    tableView.setModifier( Qt::ShiftModifier );
     tableView.setSortingEnabled( true );
+    tableView.setSortIcons( QIcon(":/icons/bullet_arrow_up.png"),
+                            QIcon(":/icons/bullet_arrow_down.png") );
+    tableView.setSelectionBehavior( QAbstractItemView::SelectRows );
     tableView.setModel( users );
+    tableView.resize(400, 300);
     tableView.show();
 
     return a.exec();
 }
-
