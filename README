@@ -1,1 +1,4 @@
-MultisortTableView is Qt widget inherits from QTableModel, which can sort table by miltiply columns.
+MultisortTableView is a Qt widget inherits from QTableView, which can sort table by miltiply columns.
+To sort data their use AlphanumSortProxyModel inherits from QSortFilterProxyModel and sort data by alphanum algorithm (for more information about algorithm see http://www.davekoelle.com/alphanum.html).
+
+How to use this widget in your project see at main.cpp file.
