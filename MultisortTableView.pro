@@ -1,4 +1,4 @@
-QT += core gui sql
+QT += widgets core gui sql
 
 TARGET = MultisortTableView
 TEMPLATE = app
