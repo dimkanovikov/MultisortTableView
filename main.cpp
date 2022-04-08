@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QMainWindow>
 #include <QTableView>
 #include <QtSql>
 
@@ -47,8 +48,11 @@ int main(int argc, char *argv[])
                             QIcon(":/icons/bullet_arrow_down.png") );
     tableView.setSelectionBehavior( QAbstractItemView::SelectRows );
     tableView.setModel( users );
-    tableView.resize(400, 300);
-    tableView.show();
 
+    QMainWindow window;
+    window.setCentralWidget(&tableView);
+    window.setWindowTitle("QT Sort by multiple columns test");
+    window.resize(400, 300);
+    window.show();
     return a.exec();
 }
